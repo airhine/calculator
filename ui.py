@@ -14,6 +14,8 @@ class View(QWidget):
         self.btn2 = QPushButton("Clear", self)
         self.le1 = QLineEdit('0', self)
         self.le1.setAlignment(QtCore.Qt.AlignRight)
+        self.le1.setFocus(True)
+        self.le1.selectAll()
         self.le2 = QLineEdit('0', self)
         self.le2.setAlignment(QtCore.Qt.AlignRight)
         self.cb = QComboBox(self)
